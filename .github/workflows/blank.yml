@@ -21,7 +21,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and capture variable: ${{ variables.SUBNET }}
+          echo test, and capture variable: ${{ variable.SUBNET }}
           echo test, and testing secret: ${{ secrets.SUBNET }}
   prod:
     # The type of runner that the job will run on
@@ -34,5 +34,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and capture variable: ${{ variables.SUBNET }}
+          echo test, and capture variable: ${{ variable.SUBNET }}
           echo test, and testing secret: ${{ secrets.SUBNET }}
